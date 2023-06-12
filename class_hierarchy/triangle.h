@@ -1,6 +1,9 @@
 #pragma once
+
+#include<stdexcept>
 #include<iostream>
 #include"Figure.h"
+#include"err.h"
 
 class triangle :public figure
 {

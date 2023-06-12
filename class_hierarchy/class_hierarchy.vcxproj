@@ -129,6 +129,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="equilateral.cpp" />
+    <ClCompile Include="err.cpp" />
     <ClCompile Include="Figure.cpp" />
     <ClCompile Include="isosceles.cpp" />
     <ClCompile Include="main.cpp" />
@@ -142,6 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="equilateral.h" />
+    <ClInclude Include="err.h" />
     <ClInclude Include="Figure.h" />
     <ClInclude Include="isosceles.h" />
     <ClInclude Include="parallellogram.h" />

@@ -48,6 +48,9 @@
     <ClCompile Include="rhomb.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="err.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Figure.h">
@@ -78,6 +81,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="rhomb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="err.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

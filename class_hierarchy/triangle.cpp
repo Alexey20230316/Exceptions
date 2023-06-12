@@ -1,6 +1,7 @@
 #include<iostream>
 #include"triangle.h"
 #include"Figure.h"
+#include"err.h"
 
 triangle::triangle()
 {
@@ -8,13 +9,18 @@ triangle::triangle()
 
 triangle::triangle(int a, int A) // равносторонний
 {
-	this->a = a;
-	this->b = a;
-	this->c = a;
-	this->A = A;
-	this->B = A;
-	this->C = A;
-	this->tri = "Равносторонний треугольник:";
+	/*if (a != 60)
+	{
+		throw domain_error("Сумма углов не равна 180 градусов!");
+	}*/
+		this->a = a;
+		this->b = a;
+		this->c = a;
+		this->A = A;
+		this->B = A;
+		this->C = A;
+		this->tri = "Равносторонний треугольник:";
+	
 }
 triangle::triangle(int a, int c, int A) //равнобедренный
 {
