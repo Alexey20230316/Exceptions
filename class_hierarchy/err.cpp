@@ -3,7 +3,7 @@
 #include<stdexcept>
 
 
-using std::domain_error;
+
 
 
 	const char* err::what() const

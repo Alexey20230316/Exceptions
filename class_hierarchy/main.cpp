@@ -17,24 +17,6 @@
 #include"err.h"
 
 
-//#define Excep
-
-#ifdef Excep
-
-class Build_Error:public std::domain_error
-{
-public:
-	const char* what() const override
-	{
-		return "Ошибка";
-	}
-
-private:
-
-};
-
-#endif // Excep
-
 
 int main() {
 
