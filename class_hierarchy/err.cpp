@@ -1,7 +1,12 @@
+#include<iostream>
 #include"err.h"
+#include<stdexcept>
 
 
-	const char* what()
+using std::domain_error;
+
+
+	const char* err::what() const
 	{
-		return "Ошибка";
+		return nullptr;
 	}

@@ -1,14 +1,13 @@
 #pragma once
 
+#include<iostream>
 #include<stdexcept>
+#include<string.h>
 
 
-class Build_Error :public std::domain_error
+class err :public std::domain_error
 {
 public:
-public:
-	const char* what() const override;
-	
-private:
 
+	const char* what() const override;
 };

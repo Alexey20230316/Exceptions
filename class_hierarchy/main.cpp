@@ -17,7 +17,7 @@
 #include"err.h"
 
 
-#define Excep
+//#define Excep
 
 #ifdef Excep
 
@@ -43,6 +43,7 @@ int main() {
 
 	try
 	{
+		
 		// треугольник
 		triangle q(2, 2, 2, 30, 30, 30);
 		q.Tell();
@@ -82,7 +83,7 @@ int main() {
 		v.Tell();
 
 	}
-	catch (const Build_Error & ex)
+	catch (const err& ex)
 	{
 		std::cout << ex.what() << std::endl;
 	}
