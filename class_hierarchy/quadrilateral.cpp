@@ -17,6 +17,10 @@
 	}
 	quadrilateral::quadrilateral(int a, int b)// прямоугольник
 	{
+		if (((a == c) || (b == d)) || ((A + B + C + D) == 360))
+		{
+			throw err("Ошибка создания фигуры. Причина: стороны попарно не равны или сумма углов не равна 360 градусов.");
+		}
 		this->a = a;
 		this->b = b;
 		this->c = a;
@@ -29,6 +33,10 @@
 	}
 	quadrilateral::quadrilateral(int a, int A, int B)// ромб
 	{
+		if (A == 0 || B == 0 || a == 0)
+		{
+			throw err("Ошибка создания фигуры. Причина: углы попарно не равны или стороны не равны.");
+		}
 		this->a = a;
 		this->b = a;
 		this->c = a;
@@ -41,6 +49,10 @@
 	}
 	quadrilateral::quadrilateral(int a, int b, int A, int B)// паралеллограмм
 	{
+		if (a == b || A == B)
+		{
+			throw err("Ошибка создания фигуры. Причина: углы или стороны попарно не равны.");
+		}
 		this->a = a;
 		this->b = b;
 		this->c = a;
@@ -53,6 +65,10 @@
 	}
 	quadrilateral::quadrilateral(int a, int b, int c, int d, int A, int B, int C, int D)
 	{
+		if ((A + B + C + D) != 360)
+		{
+			throw err("Ошибка создания фигуры. Причина: сумма углов не равна 360 градусов.");
+		}
 		this->a = a;
 		this->b = b;
 		this->c = c;

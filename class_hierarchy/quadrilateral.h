@@ -1,6 +1,8 @@
 #pragma once
 #include"Figure.h"
-
+#include"err.h"
+#include<stdexcept>
+#include<iostream>
 
 
 // четырехугольник

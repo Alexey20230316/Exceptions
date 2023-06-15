@@ -27,21 +27,21 @@ int main() {
 	{
 		
 		// треугольник
-		triangle q(2, 2, 2, 30, 30, 30);
+		triangle q(2, 2, 2, 60, 60, 60);
 		q.Tell();
 
 		
 		// равносторонний
-		equilateral a(4, 5);
+		equilateral a(4, 60);
 		a.Tell();
 
 		// прямоугольный
-		rectangular b(3, 4, 5, 60, 80);
+		rectangular b(3, 4, 5, 60, 30);
 		b.Tell();
 
 
 		// равнобедренный
-		isosceles c(22, 10, 45);
+		isosceles c(22, 22, 45);
 		c.Tell();
 
 		// четырехугольник
@@ -57,11 +57,11 @@ int main() {
 		m.Tell();
 
 		// паралеллограмм
-		parallellogram n(10, 10, 70, 110);
+		parallellogram n(10, 20, 70, 110);
 		n.Tell();
 
 		// ромб
-		rhomb v(35, 10, 170);
+		rhomb v(8, 10, 170);
 		v.Tell();
 
 	}

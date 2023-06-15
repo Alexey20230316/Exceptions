@@ -1,12 +1,7 @@
 #include<iostream>
 #include"err.h"
-#include<stdexcept>
 
 
 
+err::err(std::string msg) :domain_error(msg) {}
 
-
-	const char* err::what() const
-	{
-		return nullptr;
-	}
